@@ -1,0 +1,40 @@
+/* Accent color overrides with matching selectors to the theme so they win. */
+:root,
+.dark,
+html:not([data-mode]),
+html[data-mode="dark"] {
+  --link-color: #ffc600;
+  --link-underline-color: #e6b400;
+  --link-hover-color: #ffda47;
+  --toc-highlight: #ffc600;
+  --checkbox-checked-color: #ffc600;
+  /*--button-bg: #ffc600;
+  --btn-primary-bg: #ffc600;
+  --btn-primary-hover-bg: #ffda47;
+  --btn-backtotop-color: #ffc600;
+  --btn-backtotop-border-color: #e6b400;*/
+  --primary-color: #ffc600;
+  --text-selection-bg: #ffe680;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]),
+  html[data-mode="dark"] {
+    --link-color: #ffc600;
+    --link-underline-color: #e6b400;
+    --link-hover-color: #ffda47;
+    --toc-highlight: #ffc600;
+    --checkbox-checked-color: #ffc600;
+    /*--button-bg: #ffc600;
+    --btn-primary-bg: #ffc600;
+    --btn-primary-hover-bg: #ffda47;
+    --btn-backtotop-color: #ffc600;
+    --btn-backtotop-border-color: #e6b400;*/
+    --primary-color: #ffc600;
+    --text-selection-bg: #ffe680;
+  }
+}
+
+article p {
+  text-align: justify;
+}
