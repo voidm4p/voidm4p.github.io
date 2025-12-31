@@ -8,6 +8,7 @@ html[data-mode="dark"] {
   --link-hover-color: #ffda47;
   --toc-highlight: #ffc600;
   --checkbox-checked-color: #ffc600;
+  --bs-btn-color: #ffc600;
   /*--button-bg: #ffc600;
   --btn-primary-bg: #ffc600;
   --btn-primary-hover-bg: #ffda47;
@@ -25,6 +26,7 @@ html[data-mode="dark"] {
     --link-hover-color: #ffda47;
     --toc-highlight: #ffc600;
     --checkbox-checked-color: #ffc600;
+    --bs-btn-color: #ffc600;
     /*--button-bg: #ffc600;
     --btn-primary-bg: #ffc600;
     --btn-primary-hover-bg: #ffda47;
@@ -37,4 +39,17 @@ html[data-mode="dark"] {
 
 article p {
   text-align: justify;
+}
+
+/* Tag buttons: switch outline primary to yellow palette */
+.post-tag.btn.btn-outline-primary {
+  color: #ffc600;
+  border-color: #ffc600;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    background-color: #ffc600;
+    border-color: #e6b400;
+  }
 }
