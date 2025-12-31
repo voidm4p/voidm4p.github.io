@@ -25,6 +25,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+
+      - name: Install npm dependencies
+        run: npm install --package-lock=false --ignore-scripts --no-audit --no-fund
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
