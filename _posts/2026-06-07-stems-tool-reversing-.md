@@ -24,7 +24,7 @@ toc: true
 
 ## Introduction
 
-Recently I spent some time reverse engineering a commercial AI-powered stem separation application. The objective was not to reproduce the vendor's product or redistribute proprietary assets, but to understand how the offline processing pipeline actually worked.
+Recently I spent some time reverse engineering a commercial AI-powered stem separation application. The objective was to understand how the offline processing pipeline actually worked.
 
 The investigation ultimately covered:
 
